@@ -1,0 +1,20 @@
+# The ghostty config
+
+font-family = "VictorMono NF Medium"
+theme = "UltraDark"
+
+fullscreen = true
+maximize = true
+
+cursor-style = block
+adjust-cursor-thickness = 12
+
+# background-blur = 20
+# background-opacity = 0.92
+
+window-decoration = none
+window-theme = ghostty
+
+shell-integration = zsh
+shell-integration-features = true
+
