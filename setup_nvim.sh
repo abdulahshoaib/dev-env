@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-## add my neovim config
+git clone https://github.com/abdulahshoaib/nvim-config "$HOME/.config/nvim"
