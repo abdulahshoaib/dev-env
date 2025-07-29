@@ -221,22 +221,7 @@ sudo systemctl enable --now NetworkManager.service
 success "All services started successfully"
 
 info "Installing Nerd Fonts"
-
-paru -S fontforge --needed --noconfirm || fail "Fail to install fontforge"
-git clone --filter=blob:none --sparse https://github.com/ryanoasis/nerd-fonts
-cd nerd-fonts
-git sparse-checkout add src
-
-fonts=(VictorMono FiraCode FiraMono Hasklig Hermit BigBlueTerminal MartianMono)
-
-for font in "${fonts[@]}"; do
-  if [ -d "src/$font" ]; then
-    ./font-patcher src/"$font"/*.ttf --complete --mono
-  else
-    warning "Font folder for $font not found. Skipping."
-  fi
-done
-
+./setup_fonts.sh
 success "Installed Nerd Font, Set VictorMono as the default"
 
 ./setup_fuzzel.sh
