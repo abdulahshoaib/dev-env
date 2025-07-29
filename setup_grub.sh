@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-## setup the beautiful grub setup
+git clone https://github.com/yeyushengfan258/Particle-circle-grub-theme.git
+cd Particle-circle-grub-theme
+sudo ./install.sh -t window
+
