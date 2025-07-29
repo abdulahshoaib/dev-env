@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p ~/.config/waybar
 tee ~/.config/waybar/style.css > /dev/null <<EOF
 * {
   font-family: "JetBrainsMono Nerd Font Mono";
