@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-FONT_DIR="./.font"
+FONT_DIR="../.font"
 TMP_DIR="$(mktemp -d)"
 fonts=(VictorMono FiraCode FiraMono Hasklig Hermit BigBlueTerminal MartianMono)
 
