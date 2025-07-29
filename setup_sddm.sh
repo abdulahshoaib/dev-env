@@ -68,7 +68,7 @@ Pane {
 	    id: formBackground
 
 	    width: form.width * 0.8
-	    height: form.height * 0.7
+	    height: form.height * 0.8
 
 	    anchors.centerIn: form
 
